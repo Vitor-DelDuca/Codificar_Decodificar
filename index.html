@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+    <title>Codificador e Decodificador</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>
+        Cifra de César ou Base64<span></span>
+      </h1>
+      <form>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" cols="10" rows="4"></textarea>
+
+        <select name="codigo" id="codigo">
+          <option value="" disabled selected>Tipo de código</option>
+          <option value="cesar">Cifra de César</option>
+          <option value="base64">Base 64</option>
+        </select>
+
+        <fieldset class="divChave">
+          <label for="chave">Insira um incremento:</label>
+          <input type="number" id="chave" value="1" max="" />
+        </fieldset>
+
+        <fieldset class="radioCod">
+          <div class="divRadio">
+            <input type="radio" name="cod" class="radio" id="cod" />
+            <label for="codificar">Codificar</label>
+          </div>
+
+          <div class="divRadio">
+            <input type="radio" name="cod" class="radio" id="decod" />
+            <label for="decodificar">Decodificar</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="resultado">Resultado:</label>
+          <textarea
+            name="resultado"
+            id="resultado"
+            cols="10"
+            rows="4"
+            readonly
+          ></textarea>
+        </fieldset>
+
+        <button id="botaoResultado">
+          <p>
+            Codificar<span></span> ou Decodificar<span></span>
+          </p>
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p> &copy; Projeto Resilia T14 - Vítor Del' Duca</p>
+    </footer>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
