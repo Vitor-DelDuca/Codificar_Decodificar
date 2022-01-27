@@ -1,13 +1,3 @@
-var divChave = document.querySelector(".divChave");
-var selecaoCod = document.addEventListener("click", function () {
-  var codigo = document.getElementById("codigo").value;
-  if (codigo == "cesar") {
-    divChave.style.display = "block";
-  } else {
-    divChave.style.display = "none";
-  }
-});
-
 var radio = document.querySelectorAll(".radio");
 var botao = document.getElementById("botaoResultado");
 var mensagem = document.getElementById("mensagem");
@@ -71,13 +61,3 @@ function decodificarCesar(msg, chave) {
     })
     .join("");
 }
-
-radio[0].addEventListener("click", function () {
-  if (radio[0].checked) {
-    botao.innerHTML = `Codificar<span></span>`;}
-});
-
-radio[1].addEventListener("click", function () {
-  if (radio[1].checked) {
-    botao.innerHTML = `Decodificar<span></span>`;}
-});
